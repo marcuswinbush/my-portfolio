@@ -2,17 +2,31 @@
 
 export default function Header() {
   return (
-    <div className=" flex justify-end gap-10  px-4 bg-gray-300 ">
-      <div>
-        Home
+  
+   <nav className=" w-full p-5 shadow-md bg-white">
+    <div className=" flex justify-end gap-8">
+    <div>
+      <button className=" cursor-pointer"> Home</button>
       </div>
       <div>
-      About Me
+        <button className="cursor-pointer">
+        About Me
+        </button>
       </div>
       <div>
+        <button className="cursor-pointer">
         Projects
+        </button>
       </div>
-      
+      <div>
+      <button className='cursor-pointer'>
+          Contacts
+        </button>
+      </div>
     </div>
+     
+    </nav> 
+      
+    
   );
 }
