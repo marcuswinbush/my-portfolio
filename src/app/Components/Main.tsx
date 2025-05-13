@@ -9,9 +9,7 @@ gsap.registerPlugin(ScrollSmoother,ScrollTrigger);
 
 const Main = () => {
     const welcomePage = useRef(null);
-    const aboutPage = useRef(null);
-    const projectPage = useRef(null);
-
+   
     useEffect(() =>  {
         gsap.from(welcomePage.current,{
             opacity: 0,
@@ -20,25 +18,7 @@ const Main = () => {
             ease: "power2.out",
 
         });
-
-
-        gsap.from(aboutPage.current, {
-            opacity: 0,
-            y: 50,
-            duration: 1,
-            ease: "power2.out",
-        });
-
-        gsap.from(projectPage.current, {
-            ScrollTrigger: {
-                trigger: projectPage.current,
-                start: "top 80%",
-            },
-            opacity: 0,
-            y: 50,
-            duration: 1,
-            ease: "power2.out",
-        });
+        
     }, []);
 
 
@@ -51,13 +31,16 @@ return(
     </h2>
     </div>
     
-    <div ref={aboutPage} className=" h-screen flex justify-center items-center ">
-    <h1>
-    My name is Marcus
+    <div className=" h-screen flex flex-col justify-center items-center  ">
+    <h1 className=" ">
+    My name is Marcus Winbush.
     </h1>
     <a>
         I am an aspiring Web Developer with a background in Science. 
     </a>
+    <h1 className=" relative flex float-right">
+        About Me
+    </h1>
     <div>
         Projects
     </div>

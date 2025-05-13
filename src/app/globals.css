@@ -2,7 +2,26 @@
 
 *{
     box-sizing: border-box;
+
+
+    
     
 
 }
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.nav-link{
+    cursor: pointer;
+    
+    
+
+}
+.nav-link:hover{
+    color: #d9a7c7;
+transition: all 0.3s ease-in;
+}
+
 
