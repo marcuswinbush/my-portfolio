@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 *{
     box-sizing: border-box;
 
@@ -24,4 +24,13 @@
 transition: all 0.3s ease-in;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
 
+.about-section{
+display: inline-block;
+width: 30rem;
+}
