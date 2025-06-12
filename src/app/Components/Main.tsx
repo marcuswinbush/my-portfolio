@@ -5,11 +5,14 @@ import {useEffect, useRef} from "react";
 import {gsap} from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 gsap.registerPlugin(ScrollSmoother,ScrollTrigger);
 
 const Main = () => {
     const welcomePage = useRef(null);
     const animate = useRef(null);
+    const about = useRef(null);
    
     useEffect(() =>  {
         const el = animate.current;
@@ -27,6 +30,24 @@ const Main = () => {
                     toggleActions: "play none none reverse",
                 },
             }
+        );
+
+        const hl = about.current;
+        gsap.fromTo(
+            hl,
+            { opacity: 0, y: 50 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                },
+            }
+
         );
 
 
@@ -50,11 +71,11 @@ return(
     </h2>
     </div>
     
-    <div className=" h-screen flex flex-col justify-center items-center  ">
- <section className="main-container">
+    <div className=" h-screen relative flex flex-col justify-center items-center  ">
+ <section className="about-container">
 
      <div className="about-section">
-    <h1 className="text-4xl font-semibold ">
+    <h1 ref={about} className="text-4xl font-semibold ">
         About Me
     </h1>  
     </div>
@@ -67,16 +88,11 @@ return(
         I am an aspiring Web Developer with a background in Science. 
      </a>
      </div>
-    
-   
-       
         
     
     </section>
     
-    <div>
-        Projects
-    </div>
+   
     </div>
     
        
