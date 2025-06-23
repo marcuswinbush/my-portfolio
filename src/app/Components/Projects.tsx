@@ -38,12 +38,13 @@ return(
 
          <div className="w-full pt-4">
           <div className="button-wrapper">
-          <button className="service-button" onClick={handleButtonClickOne}>
+          <button className="service-button" >
             
             <span className="font-medium">Live Demo</span>
             
             </button>
-          <button className="description-button">Description</button>
+          <button className="description-button" onClick={handleButtonClickOne}>
+            <span className="font-medium">Description</span></button>
           </div>
           
           
@@ -75,18 +76,33 @@ return(
         </section>
 
 
-        <section className="flex justify-center pb-10 px-4 text-center">
-          <div className="bg-black text-white  shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <section className="flex flex-col justify-center pb-10 px-4 text-center">
+          <div className=" shadow-md dark:bg-gray-800 dark:border-gray-700">
             
             <Image
               src={Travel}
               className="w-full h-auto max-w-7xl rounded-t-md"
-              alt="Anime"
+              alt="Travel"
               loading="lazy"
             />
 
             </div>
             
+<div className="w-full pt-4">
+          <div className="button-wrapper">
+          <button className="service-button" >
+            
+            <span className="font-medium">Live Demo</span>
+            
+            </button>
+          <button className="description-button" onClick={handleButtonClickOne}>
+            <span className="font-medium">Description</span></button>
+          </div>
+          
+          
+         </div>
+
+
         </section>
 
         <section className="flex justify-center pb-10 px-4 text-center">
