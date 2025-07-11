@@ -9,10 +9,26 @@ import { useState } from "react";
 
 const Projects = () => {
   const [showTextBoxOne, setShowTextBoxOne] = useState(false);
+  const [showTextBoxTwo, setShowTextBoxTwo] = useState(false);
+  const [showTextBoxThree, setShowTextBoxThree] = useState(false);
+  const [showTextBoxFour, setShowTextBoxFour] = useState(false);
   
   const handleButtonClickOne = () => {
     setShowTextBoxOne(true);
   };
+
+  const handleButtonClickTwo = () => {
+    setShowTextBoxTwo(true);
+  };
+
+  const handleButtonClickThree = () => {
+    setShowTextBoxThree(true);
+  }
+
+  const handleButtonClickFour = () => {
+    setShowTextBoxFour(true);
+  
+  }
 
 return(
 <div className=" w-full absolute bg-gray-100">
@@ -56,9 +72,9 @@ return(
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
             <h1 className="text-xl mb-4">Molecular Biology</h1>
-            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <p>.</p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded
+            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
             onClick={() => setShowTextBoxOne(false)}
             >
@@ -95,7 +111,7 @@ return(
             <a className="font-medium">Live Demo</a>
             
             </button>
-          <button className="description-button" onClick={handleButtonClickOne}>
+          <button className="description-button" onClick={handleButtonClickTwo}>
             <span className="font-medium">Description</span></button>
           </div>
           
@@ -105,15 +121,15 @@ return(
 
          {
     <div className="flex justify-center items-center">
-      {showTextBoxOne && (
+      {showTextBoxTwo && (
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
             <h1 className="text-xl mb-4">Molecular Biology</h1>
             <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded
+            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
-            onClick={() => setShowTextBoxOne(false)}
+            onClick={() => setShowTextBoxTwo(false)}
             >
             Close
             </button>
@@ -146,12 +162,33 @@ return(
                           <a className="font-medium">Live Demo</a>
                           
                           </button>
-                        <button className="description-button" onClick={handleButtonClickOne}>
+                        <button className="description-button" onClick={handleButtonClickThree}>
                           <span className="font-medium">Description</span></button>
                         </div>
                         
                         
                       </div>
+                          {
+    <div className="flex justify-center items-center">
+      {showTextBoxThree && (
+        <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
+          <div className="bg-white rounded-lg p-8 max-w-3xl">
+            <h1 className="text-xl mb-4">Molecular Biology</h1>
+            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <button 
+            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
+            "
+            onClick={() => setShowTextBoxThree(false)}
+            >
+            Close
+            </button>
+          </div>
+        </div>
+      )}
+
+    </div>
+  }
+
                     
                 </section>
             
@@ -175,12 +212,33 @@ return(
                           <span className="font-medium">Live Demo</span>
                           
                           </button>
-                        <button className="description-button" onClick={handleButtonClickOne}>
+                        <button className="description-button" onClick={handleButtonClickFour}>
                           <span className="font-medium">Description</span></button>
                         </div>
           
           
          </div>
+             {
+    <div className="flex justify-center items-center">
+      {showTextBoxFour && (
+        <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
+          <div className="bg-white rounded-lg p-8 max-w-3xl">
+            <h1 className="text-xl mb-4">Molecular Biology</h1>
+            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <button 
+            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
+            "
+            onClick={() => setShowTextBoxFour(false)}
+            >
+            Close
+            </button>
+          </div>
+        </div>
+      )}
+
+    </div>
+  }
+
 
    </section>
 
