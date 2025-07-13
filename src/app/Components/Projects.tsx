@@ -71,8 +71,10 @@ return(
       {showTextBoxOne && (
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
-            <h1 className="text-xl mb-4">Molecular Biology</h1>
-            <p>.</p>
+            <h1 className="text-xl mb-4">Anime Haven</h1>
+            <p> Welcome to AnimeHaven! The premier destination for anime enthusiasts seeking a rich, immersive experience. 
+              Built with React for a smooth, dynamic interface, styled with SCSS for a modern, aesthetic appeal, and powered by robust APIs for real-time content, AnimeHaven is designed to cater to all your anime needs.
+</p>
             <button 
             className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
@@ -124,8 +126,9 @@ return(
       {showTextBoxTwo && (
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
-            <h1 className="text-xl mb-4">Molecular Biology</h1>
-            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <h1 className="text-xl mb-4">Travel</h1>
+            <p>Travel is a website developed using React and SCSS. Built with cutting-edge technologies, our platform seamlessly blends stunning visuals with intuitive functionality, offering you a dynamic and immersive travel experience like no other.
+                        </p>
             <button 
             className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
@@ -173,8 +176,8 @@ return(
       {showTextBoxThree && (
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
-            <h1 className="text-xl mb-4">Molecular Biology</h1>
-            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <h1 className="text-xl mb-4">Ecommerce</h1>
+            <p>  A cutting-edge e-commerce platform designed to provide an exceptional shopping experience for fashion enthusiasts. Built with the powerful Next.js framework and styled using tailwind css, E-commercce combines high performance with a visually stunning and responsive design.</p>
             <button 
             className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
@@ -223,8 +226,9 @@ return(
       {showTextBoxFour && (
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
-            <h1 className="text-xl mb-4">Molecular Biology</h1>
-            <p>At Elemental Analytics, we specialize in providing cutting-edge molecular biology solutions tailored to meet the diverse needs of researchers, academic institutions, and biotech organizations. Our mission is to empower scientific discovery and innovation through precise, reliable, and efficient molecular biology services. Some key services we provide are DNA/RNA sequencing, PCR/qPCR analysis, Protein expression and CRISPR.</p>
+            <h1 className="text-xl mb-4">Weather</h1>
+            <p> The WeatherApp API is a comprehensive solution designed to provide weather information to developers creating applications with React.js and CSS. This API delivers accurate and up-to-date weather data, including current conditions, forecasts, and weather alerts, enabling developers to build responsive and visually appealing weather applications.
+</p>
             <button 
             className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
