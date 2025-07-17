@@ -1,6 +1,7 @@
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Projects from "./Components/Projects";
+import Footer from './Components/Footer';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     <Header/>
     <Main/>
     <Projects/>
+    <Footer/>
    </section>
       
 
