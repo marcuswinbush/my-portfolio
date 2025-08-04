@@ -64,7 +64,7 @@ const Main = () => {
 
 
 return(
-<div className="  bg-gray-100 px-5 py-5 " >
+<div className="  bg-gray-100 px-5 py-5 overflow-hidden" >
     <div ref={welcomePage} className="h-screen flex justify-center items-center">
     <h2 className="font-bold text-6xl">
     Welcome 

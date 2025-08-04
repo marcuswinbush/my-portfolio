@@ -31,7 +31,7 @@ const Projects = () => {
   }
 
 return(
-<div className=" w-full absolute bg-gray-100">
+<div className=" w-full relative bg-gray-100">
     <section className="project-container">
    
     <div className="project-section">
