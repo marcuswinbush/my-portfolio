@@ -18,12 +18,12 @@ return (
 <div className='bg-gray-100 px-5 py-5 relative w-full '>
 
 <div className='flex justify-center'>
-    <div>
+    <div className='' >
  <div>
         Contact
     </div>
-    <div>
-        <form onSubmit={onSubmit}>
+    <div className='flex'>
+        <form className='flex flex-col gap-4' onSubmit={onSubmit}>
             <input 
             value={name}
             onChange= {(e) => setName(e.target.value)}
