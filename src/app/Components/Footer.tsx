@@ -17,7 +17,7 @@ return (
     </h1>
     <div className='icons'>
         <div className='github'>
-            <FaGithub />
+            <FaGithub /> 
             </div>
         <div className='linkedin'>
             <FaLinkedin/>
