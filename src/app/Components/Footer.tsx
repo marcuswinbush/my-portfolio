@@ -1,6 +1,7 @@
 "use client";
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import '/src/app/globals.css'
+import Link from 'next/link';
 
 
 
@@ -17,13 +18,21 @@ return (
     </h1>
     <div className='icons'>
         <div className='github'>
+            <Link href="https://github.com/marcuswinbush">
             <FaGithub /> 
+            </Link>
+            
             </div>
         <div className='linkedin'>
+            <Link href="https://www.linkedin.com/in/marcus-winbush-8a8797305/">
             <FaLinkedin/>
+            </Link>
+            
             </div>
         <div className='mail'>
+            <Link href="mailto:mwinbush00@gmail.com">
             <FaEnvelope/>
+            </Link>
             </div>
 
     </div>

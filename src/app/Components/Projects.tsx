@@ -1,5 +1,9 @@
 
 "use client";
+import {useEffect, useRef} from "react";
+import {gsap} from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Anime from "../images/anime-api-sc.png";
 import Travel from "../images/travel sc.png";
@@ -7,7 +11,34 @@ import Ecommerce from "../images/ecommerce-sc.png";
 import Weather from '../images/weather-app.png';
 import { useState } from "react";
 
+
+gsap.registerPlugin(ScrollSmoother,ScrollTrigger);
+
 const Projects = () => {
+const projectPage = useRef(null);
+
+
+useEffect(() => {
+
+  const box = projectPage.current;
+  gsap.fromTo(
+    box,
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger : {
+        trigger: box,
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
+}, []);
+
+
   const [showTextBoxOne, setShowTextBoxOne] = useState(false);
   const [showTextBoxTwo, setShowTextBoxTwo] = useState(false);
   const [showTextBoxThree, setShowTextBoxThree] = useState(false);
@@ -32,9 +63,9 @@ const Projects = () => {
 
 return(
 <div className=" w-full relative bg-gray-100">
-    <section className="project-container">
+    <section  ref={projectPage} className="project-container">
    
-    <div className="project-section">
+    <div  className="project-section">
 <h1 className='text-4xl flex justify-center font-semibold'>
         Projects
     </h1>
