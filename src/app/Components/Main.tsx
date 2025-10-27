@@ -72,9 +72,9 @@ return(
     </div>
     
     <div className=" h-screen relative flex flex-col justify-center items-center  ">
- <section className="about-container">
+ <section id="aboutMe" className="about-container">
 
-     <div className="about-section">
+     <div  className="about-section">
     <h1 ref={about} className="text-4xl font-semibold ">
         About Me
     </h1>  

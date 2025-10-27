@@ -63,7 +63,7 @@ useEffect(() => {
 
 return(
 <div className=" w-full relative bg-gray-100">
-    <section  ref={projectPage} className="project-container">
+    <section id="project-id" ref={projectPage} className="project-container">
    
     <div  className="project-section">
 <h1 className='text-4xl flex justify-center font-semibold'>
