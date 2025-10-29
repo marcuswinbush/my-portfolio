@@ -2,13 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 *{
     box-sizing: border-box;
-
-
-    
-    
-
 }
-
+:root{
+    --SecondaryColor: hsl(185, 57%, 81%);
+}
 .html {
     scroll-behavior: smooth;
 }
@@ -20,7 +17,7 @@
 
 }
 .nav-link:hover {
-    color: #d9a7c7;
+    color: #ADD8E6;
 transition: all 0.3s ease-in;
 }
 
@@ -57,6 +54,9 @@ width: 100%;
     color: black;
     cursor: pointer;
 }
+.service-button:hover{
+    background: var(--SecondaryColor);
+}
 
 .description-button{
     width: 100px;
@@ -66,7 +66,10 @@ width: 100%;
     border-radius: 5px;
     background-color: #ADD8E6;
     cursor: pointer;
-    
+}
+
+.description-button:hover {
+    background: var(--SecondaryColor);
 }
 
 .button-wrapper{
