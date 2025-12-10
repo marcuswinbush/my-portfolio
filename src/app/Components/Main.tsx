@@ -81,11 +81,12 @@ return(
     </div>
 
     <div ref={animate} className=" inline-block ">
-         <h1 className=" ">
-             My name is Marcus Winbush.
-        </h1>
+         
      <a>
-        I am an aspiring Web Developer with a background in Science. 
+       Hello, My name is Marcus Winbush. I am a science graduate turned web developer with a passion 
+       for building responsive websites and web applications. With with my background in the science field,
+       it helped attune my problem-solving and analytical skills - which I now apply to front-end development.
+       I enjoy creating user-friendly designs and looking for ways to continuously grow my skills through projects and challenges.
      </a>
      </div>
         
