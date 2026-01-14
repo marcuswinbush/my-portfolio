@@ -1,6 +1,6 @@
 
 "use client";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {gsap} from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,7 +9,7 @@ import Anime from "../images/anime-api-sc.png";
 import Travel from "../images/travel sc.png";
 import Ecommerce from "../images/ecommerce-sc.png";
 import Weather from '../images/weather-app.png';
-import { useState } from "react";
+
 
 
 gsap.registerPlugin(ScrollSmoother,ScrollTrigger);
@@ -85,12 +85,13 @@ return(
 
          <div className="w-full pt-4">
           <div className="button-wrapper">
-          <button className="service-button" onClick={() => window.location.href = 'https://anime-api-nine-rho.vercel.app'} >
-            
+          <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+             onClick={() => window.location.href = 'https://anime-api-nine-rho.vercel.app'} >
             <a className="font-medium" >Live Demo</a>
             
             </button>
-          <button className="description-button" onClick={handleButtonClickOne}>
+          <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+             onClick={handleButtonClickOne}>
             <span className="font-medium">Description</span></button>
           </div>
           
@@ -107,8 +108,7 @@ return(
               Built with React for a smooth, dynamic interface, styled with SCSS for a modern, aesthetic appeal, and powered by robust APIs for real-time content, AnimeHaven is designed to cater to all your anime needs.
 </p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
-            "
+            className="mt-4 text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer"
             onClick={() => setShowTextBoxOne(false)}
             >
             Close
@@ -139,12 +139,13 @@ return(
             
 <div className="w-full pt-4">
           <div className="button-wrapper">
-          <button className="service-button" onClick={() => window.location.href = 'https://travel-ten-teal.vercel.app'} >
-            
-            <a className="font-medium">Live Demo</a>
-            
+          <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+             onClick={() => window.location.href = 'https://travel-ten-teal.vercel.app'} >
+            <a className="font-medium">Live Demo</a>            
             </button>
-          <button className="description-button" onClick={handleButtonClickTwo}>
+
+          <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+           onClick={handleButtonClickTwo}>
             <span className="font-medium">Description</span></button>
           </div>
           
@@ -161,7 +162,7 @@ return(
             <p>Travel is a website developed using React and SCSS. Built with cutting-edge technologies, our platform seamlessly blends stunning visuals with intuitive functionality, offering you a dynamic and immersive travel experience like no other.
                         </p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
+            className="mt-4 text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
             onClick={() => setShowTextBoxTwo(false)}
             >
@@ -183,7 +184,7 @@ return(
                     <Image
                       src={Ecommerce}
                       className="w-full h-auto max-w-7xl rounded-t-md"
-                      alt="Anime"
+                      alt="Ecommerce"
                       loading="lazy"
                     />
         
@@ -191,12 +192,13 @@ return(
 
                     <div className="w-full pt-4">
                         <div className="button-wrapper">
-                        <button className ="service-button" onClick={() => window.location.href = "https://my-ecommerce-tawny.vercel.app"} >
-                          
-                          <a className="font-medium">Live Demo</a>
-                          
+                        <button className =" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+                           onClick={() => window.location.href = "https://my-ecommerce-tawny.vercel.app"} >  
+                          <a className="font-medium">Live Demo</a>          
                           </button>
-                        <button className="description-button" onClick={handleButtonClickThree}>
+
+                        <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+                         onClick={handleButtonClickThree}>
                           <span className="font-medium">Description</span></button>
                         </div>
                         
@@ -210,7 +212,7 @@ return(
             <h1 className="text-xl mb-4">Ecommerce</h1>
             <p>  A cutting-edge e-commerce platform designed to provide an exceptional shopping experience for fashion enthusiasts. Built with the powerful Next.js framework and styled using tailwind css, E-commercce combines high performance with a visually stunning and responsive design.</p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
+            className="mt-4 text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
             onClick={() => setShowTextBoxThree(false)}
             >
@@ -228,25 +230,26 @@ return(
             
 
 
- <section className="flex justify-center flex-col pb-10 px-4 text-center">
+                <section className="flex justify-center flex-col pb-10 px-4 text-center">
                   <div className= " bg-black text-black shadow-md dark:bg-gray-800 dark:border-gray-700">
                     
                     <Image
                       src={Weather}
                       className="w-full h-auto max-w-7xl rounded-t-md"
-                      alt="Anime"
+                      alt="Weather"
                       loading="lazy"
                     />
                     </div>
 
                     <div className="w-full pt-4">
                         <div className="button-wrapper">
-                        <button className="service-button" onClick={() => window.location.href = "https://weather-app-api-clone.vercel.app"} >
-                          
+                        <button className=" text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+                         onClick={() => window.location.href = "https://weather-app-api-clone.vercel.app"} >                          
                           <span className="font-medium">Live Demo</span>
-                          
                           </button>
-                        <button className="description-button" onClick={handleButtonClickFour}>
+
+                        <button className=" text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
+                          onClick={handleButtonClickFour}>
                           <span className="font-medium">Description</span></button>
                         </div>
           
@@ -261,7 +264,7 @@ return(
             <p> The WeatherApp API is a comprehensive solution designed to provide weather information to developers creating applications with React.js and CSS. This API delivers accurate and up-to-date weather data, including current conditions, forecasts, and weather alerts, enabling developers to build responsive and visually appealing weather applications.
 </p>
             <button 
-            className="mt-4 text-white bg-gradient-to-br from-orange-400 via-red-500 to-orange-400 hover:bg-gradient-to-br shadow-lg shadow-red-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
+            className="mt-4 text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
             onClick={() => setShowTextBoxFour(false)}
             >
