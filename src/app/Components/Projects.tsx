@@ -140,7 +140,7 @@ return(
 <div className="w-full pt-4">
           <div className="button-wrapper">
           <button className=" text-white bg-gradient-to-br from-blue-400 via-cyan-500 to-blue-400 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer" 
-             onClick={() => window.location.href = 'https://travel-ten-teal.vercel.app'} >
+             onClick={() => window.location.href = 'https://travel-l2fw9i1vf-marcuswinbushs-projects.vercel.app/#'} >
             <a className="font-medium">Live Demo</a>            
             </button>
 
@@ -210,7 +210,7 @@ return(
         <div className="fixed z-10 inset-0 bg-black/30 flex justify-center items-center text-black px-8">
           <div className="bg-white rounded-lg p-8 max-w-3xl">
             <h1 className="text-xl mb-4">Ecommerce</h1>
-            <p>  A cutting-edge e-commerce platform designed to provide an exceptional shopping experience for fashion enthusiasts. Built with the powerful Next.js framework and styled using tailwind css, E-commercce combines high performance with a visually stunning and responsive design.</p>
+            <p>  A cutting-edge e-commerce platform designed to provide an exceptional shopping experience for fashion enthusiasts. Built with the powerful Next.js framework and styled using tailwind css, E-commerce combines high performance with a visually stunning and responsive design.</p>
             <button 
             className="mt-4 text-white bg-gradient-to-br from-sky-500 via-cyan-500 to-sky-500 hover:bg-gradient-to-br shadow-lg shadow-blue-400/50 animate-text font-bold py-2 px-4 rounded cursor-pointer
             "
