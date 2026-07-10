@@ -82,12 +82,13 @@ return(
 
     <div ref={animate} className=" inline-block ">
          
-     <a>
-       Hello, My name is Marcus Winbush. I am a science graduate turned web developer with a passion 
-       for building responsive websites and web applications. With with my background in the science field,
-       it helped attune my problem-solving and analytical skills - which I now apply to front-end development.
-       I enjoy creating user-friendly designs and looking for ways to continuously grow my skills through projects and challenges.
-     </a>
+     <p className=" flex p-4 text-base/8  ">
+       Hello, my name is Marcus Winbush. I am a scientist transitioning into web development, I have a passion 
+       for building responsive websites and web applications. With my background in Biology and environmental testing -
+       my experience strengthed my analytical thinking, attention-to-detail, and problem-solving skills which I now apply to building web applications.
+       I typically focus on developing responsive user-friendly interfaces with JavaScript, React and modern framework tools. I enjoy turning my ideas into 
+       practical applications and continuously improving through projects and real-word challenges.
+     </p>
      </div>
         
     
